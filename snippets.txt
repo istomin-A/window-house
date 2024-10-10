@@ -1,0 +1,283 @@
+{
+    // Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // },
+    // =======================================================================================================
+    // margin
+    "margin": {
+        // "scope": "javascript,typescript",
+        "prefix": "m",
+        "body": [
+            "margin: rem(0) rem(0) rem(0) rem(0);"
+        ],
+        "description": "margin"
+    },
+    "margin-top": {
+        // "scope": "javascript,typescript",
+        "prefix": "mt",
+        "body": [
+            "margin: rem($1) rem(0) rem(0) rem(0);"
+        ],
+        "description": "margin-top"
+    },
+    "margin-right": {
+        // "scope": "javascript,typescript",
+        "prefix": "mr",
+        "body": [
+            "margin: rem(0) rem($1) rem(0) rem(0);"
+        ],
+        "description": "margin-right"
+    },
+    "margin-bottom": {
+        // "scope": "javascript,typescript",
+        "prefix": "mb",
+        "body": [
+            "margin: rem(0) rem(0) rem($1) rem(0);"
+        ],
+        "description": "margin-bottom"
+    },
+    "margin-left": {
+        // "scope": "javascript,typescript",
+        "prefix": "ml",
+        "body": [
+            "margin: rem(0) rem(0) rem(0) rem($1);"
+        ],
+        "description": "margin-left"
+    },
+    // =======================================================================================================
+    // padding
+    "padding": {
+        // "scope": "javascript,typescript",
+        "prefix": "p",
+        "body": [
+            "padding: rem(0) rem(0) rem(0) rem(0);"
+        ],
+        "description": "padding"
+    },
+    "padding-top": {
+        // "scope": "javascript,typescript",
+        "prefix": "pt",
+        "body": [
+            "padding: rem($1) rem(0) rem(0) rem(0);"
+        ],
+        "description": "padding-top"
+    },
+    "padding-right": {
+        // "scope": "javascript,typescript",
+        "prefix": "pr",
+        "body": [
+            "padding: rem(0) rem($1) rem(0) rem(0);"
+        ],
+        "description": "padding-right"
+    },
+    "padding-bottom": {
+        // "scope": "javascript,typescript",
+        "prefix": "pb",
+        "body": [
+            "padding: rem(0) rem(0) rem($1) rem(0);"
+        ],
+        "description": "padding-bottom"
+    },
+    "padding-left": {
+        // "scope": "javascript,typescript",
+        "prefix": "pl",
+        "body": [
+            "padding: rem(0) rem(0) rem(0) rem($1);"
+        ],
+        "description": "padding-left"
+    },
+    // =======================================================================================================
+    // container
+    "container": {
+        // "scope": "javascript,typescript",
+        "prefix": "cnt",
+        "body": [
+            "<div class=\"$1__container _container\">",
+            "\t${0}",
+            "</div>"
+        ],
+        "description": "container"
+    },
+    // =======================================================================================================
+    // transition
+    "transition": {
+        // "scope": "javascript,typescript",
+        "prefix": "trn",
+        "body": [
+            "transition: all 0.5s ease 0s;"
+        ],
+        "description": "transition"
+    },
+    // =======================================================================================================
+    // media - max-width
+    "media - max-width": {
+        // "scope": "javascript,typescript",
+        "prefix": "mdmx",
+        "body": [
+            "@media (max-width: $1) {",
+            "\t${0}",
+            "}"
+        ],
+        "description": "media - max-width"
+    },
+    // =======================================================================================================
+    // coment
+    "coment": {
+        // "scope": "javascript,typescript",
+        "prefix": "com",
+        "body": [
+            "// ======================================================================================================="
+        ],
+        "description": "coment"
+    },
+    // =======================================================================================================
+    // hover
+    "hover": {
+        // "scope": "javascript,typescript",
+        "prefix": "hov",
+        "body": [
+            "&:hover {",
+            "\t${0}",
+            "}"
+        ],
+        "description": "hover"
+    },
+    // =======================================================================================================
+    // before
+    "before": {
+        // "scope": "javascript,typescript",
+        "prefix": "bef",
+        "body": [
+            "&::before {",
+            "\tcontent: '';",
+            "\t${0}",
+            "}"
+        ],
+        "description": "before"
+    },
+    // =======================================================================================================
+    // after
+    "after": {
+        // "scope": "javascript,typescript",
+        "prefix": "aft",
+        "body": [
+            "&::after {",
+            "\tcontent: '';",
+            "\t${0}",
+            "}"
+        ],
+        "description": "after"
+    },
+    // =======================================================================================================
+    // rem
+    "rem": {
+        // "scope": "javascript,typescript",
+        "prefix": "rem",
+        "body": [
+            "rem(${0})"
+        ],
+        "description": "rem"
+    },
+    // =======================================================================================================
+    // em
+    "em": {
+        // "scope": "javascript,typescript",
+        "prefix": "em",
+        "body": [
+            "em($1,${0})"
+        ],
+        "description": "em"
+    },
+    // =======================================================================================================
+    // prc
+    "prc": {
+        // "scope": "javascript,typescript",
+        "prefix": "prc",
+        "body": [
+            "prc($1,${0})"
+        ],
+        "description": "prc"
+    },
+    // =======================================================================================================
+    // spoller
+    "spoller": {
+        // "scope": "javascript,typescript",
+        "prefix": "spoller",
+        "body": [
+            "<div class=\"$1\">",
+            "\t<button class=\"$1__button _spoller-button\" data-spoller-button=\"$2\" aria-expanded=\"false\" aria-controls=\"spoller-body\">spoller button</button>",
+            "\t<div class=\"$1__body _spoller-body\" data-spoller-path=\"$2\" id=\"spoller-body\" aria-hidden=\"true\">",
+            "\t\t${0}",
+            "\t\t<!-- Для ссылок class=\"_spoller-link\" data-spoller-link=\"$2\" tabindex=\"-1\" -->",
+            "\t\t<!-- Для стрелок class=\"_spoller-arrow\" data-spoller-arrow=\"$2\" -->",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "spoller"
+    },
+    // =======================================================================================================
+    "modal": {
+        // "scope": "javascript,typescript",
+        "prefix": "modal",
+        "body": [
+            "<dialog class=\"modal\" data-modal-target=\"$1\">",
+            "\t<div class=\"modal__content\">",
+            "\t\t<button class=\"modal__close _modal-close\" type=\"button\"></button>",
+            "\t\t${0}",
+            "\t\t_modal-open\" data-modal-path=\"$1\"",
+            "\t</div>",
+            "</dialog>"
+        ],
+        "description": "modal"
+    },
+    // =======================================================================================================
+    "swiper": {
+        // "scope": "javascript,typescript",
+        "prefix": "swiper",
+        "body": [
+            "<div class=\"$1__slider swiper\">",
+            "\t<div class=\"$1__swiper swiper-wrapper\">",
+            "\t\t<div class=\"$1__slide swiper-slide\">",
+            "\t\t\t${0}",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "swiper"
+    },
+    // =======================================================================================================
+    "not(last-child)margin-bottom": {
+        // "scope": "javascript,typescript",
+        "prefix": "notlcmb",
+        "body": [
+            "&:not(:last-child) {",
+            "\tmargin: rem(0) rem(0) rem($1) rem(0);",
+            "}",
+        ],
+        "description": "not(last-child)margin-bottom"
+    },
+    // =======================================================================================================
+    "not(last-child)margin-right": {
+        // "scope": "javascript,typescript",
+        "prefix": "notlcmr",
+        "body": [
+            "&:not(:last-child) {",
+            "\tmargin: rem(0) rem($1) rem(0) rem(0);",
+            "}",
+        ],
+        "description": "not(last-child)margin-right"
+    },
+}

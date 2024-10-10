@@ -1,0 +1,73 @@
+// =======================================================================================================
+// * Базовые стили для spoller`а
+
+._spoller-body {
+    //  смотреть в макете
+    background-color: #fff;
+    border-radius: 20px;
+    //  ================
+
+    padding: 0;
+    color: transparent;
+    line-height: 0;
+    overflow: hidden;
+    transition: line-height .8s ease 0s, color .5s ease 0s, padding .8s ease 0s;
+}
+
+._spoller-body._active {
+    line-height: 1.2;
+    padding: 20px;
+    color: #000;
+}
+
+._spoller-link {
+    color: inherit;
+}
+
+.spoller__button:focus-visible,
+.spoller__link:focus-visible {}
+
+// =======================================================================================================
+// * Базовые стили для modal`s
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7);
+    transition: opacity .5s ease 0s, visibility .5s ease 0s, box-shadow .5s ease 0s;
+}
+
+.modal[open] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal::backdrop {
+    background-color: #00000000;
+}
+
+// =======================================================================================================
+// * Базовые стили для табов
+._tab-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease 0s;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    &._active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}

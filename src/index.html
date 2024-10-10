@@ -1,0 +1,2723 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+            <section class="intro">
+                <div class="intro__container _container">
+                    <div class="intro__body">
+                        <div class="intro__content content-intro">
+                            <h1 class="content-intro__title">Окна Хаус - <span>Профессиональный подход к
+                                    остеклению</span>
+                            </h1>
+                            <div class="content-intro__advantages">
+                                <div class="content-intro__item">
+                                    <img src="@img/intro/advantages/windows.svg" alt="windows">
+                                    <p class="content-intro__text">
+                                        Современные окна и балконные конструкции по доступным ценам
+                                    </p>
+                                </div>
+                                <div class="content-intro__item">
+                                    <img src="@img/intro/advantages/approach.svg" alt="approach">
+                                    <p class="content-intro__text">
+                                        Квалифицированный подход к решению задач любой сложности
+                                    </p>
+                                </div>
+                                <div class="content-intro__item">
+                                    <img src="@img/intro/advantages/guarantee.svg" alt="guarantee">
+                                    <p class="content-intro__text">
+                                        Гарантия высочайшего качества нашей продукции
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro__form form-intro">
+                            <p class="form-intro__title">Вызвать замершика на дом</p>
+                            <form action="#" method="post" class="main-form">
+                                <input type="text" name="name" required placeholder="Представьтесь, пожалуйста"
+                                    class="main-form__input main-form__input_intro">
+                                <input type="tel" name="phone" required placeholder="Номер телефона"
+                                    class="main-form__input main-form__input_intro">
+                                <input type="email" name="email" required placeholder="E-mail"
+                                    class="main-form__input main-form__input_intro">
+
+                                <label for="checkbox-rules-intro" class="main-form__label main-form__label_intro">
+                                    <input id="checkbox-rules-intro" type="checkbox" required name="checkbox-rules"
+                                        class="main-form__checkbox">
+                                    <span class="main-form__checkbox-custom main-form__checkbox-custom_intro"></span>
+                                    <span class="main-form__rules main-form__rules_intro">
+                                        Согласен на обработку персональных данных в соответствии с
+                                        <a href="#"><span>политикой конфиденциальности</span></a>
+                                    </span>
+                                </label>
+
+                                <div class="main-form__width-button">
+                                    <button type="submit" class="main-form__button main-form__button_intro">Отправить
+                                        заявку</button>
+                                </div>
+                            </form>
+                            <img class="form-intro__roulette" src="@img/intro/roulette.png" alt="roulette">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <div class="services__container _container">
+                    <h2 class="services__title title">Наши услуги</h2>
+                    <div class="services__body">
+                        <div class="services__item item-services item-services_windows _modal-open" data-modal-path="3"
+                            tabindex="0">
+                            <div class="item-services__content">
+                                <img src="@img/services/windows.svg" alt="windows" class="item-services__icon">
+                                <div class="item-services__title title">Установка пластиковых окон</div>
+                            </div>
+                            <p class="item-services__text">
+                                Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией
+                                качества
+                            </p>
+                            <svg class="item-services__arrow">
+                                <use xlink:href="@img/icons/icons.svg#item-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="services__item item-services item-services_balconies _modal-open"
+                            data-modal-path="4" tabindex="0">
+                            <div class="item-services__content">
+                                <img src="@img/services/balconies.svg" alt="balconies" class="item-services__icon">
+                                <div class="item-services__title item-services__title_max-width title">Остекление
+                                    балконов и лоджий</div>
+                            </div>
+                            <p class="item-services__text">
+                                Занимаемся остеклением и отделкой
+                                балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за
+                                сложные объекты
+                            </p>
+                            <svg class="item-services__arrow">
+                                <use xlink:href="@img/icons/icons.svg#item-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="services__item item-services item-services_cottages _modal-open" data-modal-path="5"
+                            tabindex="0">
+                            <div class="item-services__content">
+                                <img src="@img/services/cottages.svg" alt="cottages" class="item-services__icon">
+                                <div class="item-services__title title">Остекление коттеджей и дач</div>
+                            </div>
+                            <p class="item-services__text">
+                                Остекление и отделка под ключ:
+                                от коттеджей и дач до террас
+                                и беседок. Выделяем личного
+                                технолога под каждый объект
+                            </p>
+                            <svg class="item-services__arrow">
+                                <use xlink:href="@img/icons/icons.svg#item-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="services__item item-services item-services_objects _modal-open" data-modal-path="6"
+                            tabindex="0">
+                            <div class="item-services__content">
+                                <img src="@img/services/objects.svg" alt="objects" class="item-services__icon">
+                                <div class="item-services__title item-services__title_max-width title">Остекление
+                                    корпоративных объектов</div>
+                            </div>
+                            <p class="item-services__text">
+                                Реализуем сложные проекты
+                                по остеклению торговых центров,
+                                ресторанов, производственных помещений
+                                и офисов
+                            </p>
+                            <svg class="item-services__arrow">
+                                <use xlink:href="@img/icons/icons.svg#item-arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products" id="products">
+                <div class="products__container _container">
+                    <h2 class="products__title title">Продукция</h2>
+                    <div class="tab-products _tab">
+                        <div class="tab-products__buttons" role="tablist" aria-label="Блок с кнопками для табов">
+                            <button class="tab-products__button _tab-button _active" role="tab" aria-selected="true"
+                                data-tab-path="Standard">
+                                Стандарт
+                            </button>
+                            <button class="tab-products__button _tab-button" role="tab" aria-selected="false"
+                                data-tab-path="Business">
+                                Бизнес
+                            </button>
+                            <button class="tab-products__button _tab-button" role="tab" aria-selected="false"
+                                data-tab-path="Premium">
+                                Премиум
+                            </button>
+                            <button class="tab-products__button _tab-button" role="tab" aria-selected="false"
+                                data-tab-path="Exclusive">
+                                Эксклюзив
+                            </button>
+                        </div>
+                        <div class="tab-products__body">
+                            <div class="tab-products__content _tab-content _active" role="tabpanel"
+                                data-tab-target="Standard">
+                                <div class="tab-products__slider swiper">
+                                    <div class="tab-products__swiper swiper-wrapper">
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Standard">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">Rehau Blitz New</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>60/60
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>24/31
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>3</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,70
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Standard">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">Blitz Rehau Pro</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>60/62
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>24/35
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>3</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,72
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Standard">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">New Rehau Vite</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>65/72
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>30/38
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>3</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,80
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-prev swiper-button-prev_arrow-down"></div>
+                                    <div class="swiper-button-next swiper-button-prev_arrow-down"></div>
+                                </div>
+                            </div>
+                            <div class="tab-products__content _tab-content" role="tabpanel" data-tab-target="Business">
+                                <div class="tab-products__slider swiper">
+                                    <div class="tab-products__swiper swiper-wrapper">
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Business">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">VEKA Softline</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>80/82
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>50/52 мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>7</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,85 м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Business">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">VEKA Softline Pro</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>82/85
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>52/55 мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>7</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,84 м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Business">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">VEKA Softline Vite</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>83/86
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>55/57 мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>7</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,87 м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="tab-products__content _tab-content" role="tabpanel" data-tab-target="Premium">
+                                <div class="tab-products__slider swiper">
+                                    <div class="tab-products__swiper swiper-wrapper">
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Premium">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">KBE 88</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>88/91
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>56/58 мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>7</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,75
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Premium">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">KBE 88 Premium</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>88/95
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>56/60 мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>7</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,75 м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Premium">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">KBE 88 Vite</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>90/91
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>60/65
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>7</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>0,75
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="tab-products__content _tab-content" role="tabpanel" data-tab-target="Exclusive">
+                                <div class="tab-products__slider swiper">
+                                    <div class="tab-products__swiper swiper-wrapper">
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Exclusive">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">Salamander Streamline 76</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>76/80
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>40/48
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>5</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>1,49
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Exclusive">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">Salamander Streamline Exclusive</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>75/80
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>42/48
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ...............................................
+                                                        <span>5</span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>1,49
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-products__slide swiper-slide">
+                                            <div class="tab-products__img">
+                                                <img src="@img/products/tab-products/Standard.jpg" alt="Exclusive">
+                                            </div>
+                                            <div class="tab-products__info">
+                                                <div class="tab-products__title">Salamander Streamline NET</div>
+                                                <p class="tab-products__text">
+                                                    Сохраняют тепло в доме, защищают от шума
+                                                    и вписываются в любой интерьер.
+                                                    Практичный выбор
+                                                </p>
+                                                <div class="tab-products__details">
+                                                    <p>
+                                                        Системная глубина
+                                                        ............................................... <span>78/80
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Ширина
+                                                        стеклопакета ...........................................
+                                                        <span>40/48
+                                                            мм</span>
+                                                    </p>
+                                                    <p>
+                                                        Воздушные
+                                                        камеры ............................................... <span>5
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        Теплосопротивление ............................................
+                                                        <span>1,49
+                                                            м2С/ВТ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="guarantee">
+                <div class="guarantee__container _container">
+                    <div class="guarantee__inner">
+                        <div class="guarantee__img">
+                            <img src="@img/guarantee/main.png" alt="main">
+                        </div>
+                        <div class="guarantee__body">
+                            <div class="guarantee__item">
+                                <div class="guarantee__icon">
+                                    <img src="@img/guarantee/icons/01.svg" alt="icon">
+                                </div>
+                                <p class="guarantee__text">
+                                    Сертифицированный производитель Rehau
+                                </p>
+                            </div>
+
+                            <div class="guarantee__item">
+                                <div class="guarantee__icon">
+                                    <img src="@img/guarantee/icons/02.svg" alt="icon">
+                                </div>
+                                <p class="guarantee__text">
+                                    Инновационный оконный завод
+                                </p>
+                            </div>
+
+                            <div class="guarantee__item">
+                                <div class="guarantee__icon">
+                                    <img src="@img/guarantee/icons/03.svg" alt="icon">
+                                </div>
+                                <p class="guarantee__text">
+                                    Лидер по переработке профилей Rehau в России
+                                </p>
+                            </div>
+
+                            <div class="guarantee__item">
+                                <div class="guarantee__icon">
+                                    <img src="@img/guarantee/icons/04.svg" alt="icon">
+                                </div>
+                                <p class="guarantee__text">
+                                    Высокотехнологичное автоматизированное оборудование
+                                </p>
+                            </div>
+
+                            <div class="guarantee__item">
+                                <div class="guarantee__icon">
+                                    <img src="@img/guarantee/icons/05.svg" alt="icon">
+                                </div>
+                                <p class="guarantee__text">
+                                    Широкий ассортимент продукции
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guarantee__button">
+                        <div class="calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="about" id="about">
+                <div class="about__container _container">
+                    <h2 class="about__title title">О компании</h2>
+                    <div class="tab-about _tab">
+                        <div class="tab-about__buttons" role="tablist" aria-label="Блок с кнопками для табов">
+                            <button class="tab-about__button _tab-button _active" role="tab" aria-selected="true"
+                                data-tab-path="description">
+                                Описание
+                            </button>
+                            <button class="tab-about__button _tab-button" role="tab" aria-selected="false"
+                                data-tab-path="work">
+                                Как мы работаем
+                            </button>
+                            <button class="tab-about__button _tab-button" role="tab" aria-selected="false"
+                                data-tab-path="reviews">
+                                Отзывы
+                            </button>
+                            <button class="tab-about__button _tab-button" role="tab" aria-selected="false"
+                                data-tab-path="certificates">
+                                Сертификаты
+                            </button>
+                        </div>
+                        <div class="tab-about__body">
+                            <div class="tab-about__content _tab-content _active" role="tabpanel"
+                                data-tab-target="description">
+                                <div class="tab-about__inner">
+                                    <div class="tab-about__info">
+                                        <a href="#" class="tab-about__logo">
+                                            <img src="@img/general/logo.svg" alt="logo">
+                                        </a>
+                                        <p class="tab-about__text">
+                                            Мы помогаем клиентам подбирать решения, учитывая пожежелания к
+                                            характеристикам
+                                            окна и его стоимости. Окно - это объект, которым Вы будете пользоваться
+                                            много
+                                            лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.
+                                        </p>
+                                    </div>
+                                    <div class="tab-about__video">
+                                        <button type="button" class="tab-about__modal _modal-open"
+                                            data-modal-path="modal-about">
+                                            <img class="tab-about__image" src="@img/about/video-bg.jpg" alt="video">
+                                        </button>
+                                        <svg class="tab-about__icon-video _modal-open" data-modal-path="modal-about">
+                                            <use xlink:href="@img/icons/icons.svg#play"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-about__content tab-about-work _tab-content" role="tabpanel"
+                                data-tab-target="work">
+                                <div class="tab-about-work__body">
+                                    <div class="tab-about-work__item">
+                                        <div class="tab-about-work__icon">
+                                            <img src="@img/about/tabs/work/01.svg" alt="icon">
+                                        </div>
+                                        <div class="tab-about-work__title">
+                                            Бесплатно приедем
+                                        </div>
+                                        <p class="tab-about-work__text">
+                                            Выезжаем бесплатно во все
+                                            города Московской области
+                                        </p>
+                                    </div>
+
+                                    <div class="tab-about-work__item">
+                                        <div class="tab-about-work__icon">
+                                            <img src="@img/about/tabs/work/02.svg" alt="icon">
+                                        </div>
+                                        <div class="tab-about-work__title">
+                                            Выезжаем ежедневно
+                                        </div>
+                                        <p class="tab-about-work__text">
+                                            С 9 до 21 без выходных
+                                            и праздников
+                                        </p>
+                                    </div>
+
+                                    <div class="tab-about-work__item">
+                                        <div class="tab-about-work__icon">
+                                            <img src="@img/about/tabs/work/03.svg" alt="icon">
+                                        </div>
+                                        <div class="tab-about-work__title">
+                                            Образцы с собой
+                                        </div>
+                                        <p class="tab-about-work__text">
+                                            Покажем образцы профильных
+                                            систем и материалов отделки
+                                        </p>
+                                    </div>
+
+                                    <div class="tab-about-work__item">
+                                        <div class="tab-about-work__icon">
+                                            <img src="@img/about/tabs/work/04.svg" alt="icon">
+                                        </div>
+                                        <div class="tab-about-work__title">
+                                            Стоимость
+                                        </div>
+                                        <p class="tab-about-work__text">
+                                            Называем точную стоимость
+                                            заказа на месте
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-about__content tab-about-reviews _tab-content" role="tabpanel"
+                                data-tab-target="reviews">
+                                <div class="tab-about-reviews__inner">
+                                    <div class="tab-about-reviews__slider swiper">
+                                        <div class="tab-about-reviews__swiper swiper-wrapper">
+                                            <div class="tab-about-reviews__slide swiper-slide">
+                                                <div class="tab-about-reviews__body">
+                                                    <div class="tab-about-reviews__name">Раиса Михайлова</div>
+                                                    <div class="tab-about-reviews__info">
+                                                        <time datetime="2021-06-24"
+                                                            class="tab-about-reviews__time">24.06.2021</time>
+                                                        <div class="tab-about-reviews__agreement">Договор №212084</div>
+                                                    </div>
+                                                    <button class="tab-about-reviews__button _modal-open"
+                                                        data-modal-path="modal-reviews">
+                                                        Оставить отзыв
+                                                        <svg class="tab-about-reviews__icon-review">
+                                                            <use xlink:href="@img/icons/icons.svg#comment"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <p>
+                                                    Огромное СПАСИБО всей команде Дизайн-Окно! В июне 2021 заказывала
+                                                    переостекление + отделка балкона первый раз и так все удачно -
+                                                    быстро,
+                                                    качественно. Все прошло отлично, в соответствии с условиями
+                                                    договора.
+                                                    Замерщик приехал как оговорено без опозданий, произвел замер
+                                                    лазерным
+                                                    уровнем, все подробно рассказал по профилю и комплектующим.
+                                                    Предоплата
+                                                    составила 20%, остаток - по факту. Соотношение цена/качество в
+                                                    сравнении
+                                                    с
+                                                    конкурентами. Доставка точно в срок, за 3 дня все установили. Итог -
+                                                    красивые окна. Будем зимой проверять на прочность :)
+                                                </p>
+
+                                                <p>
+                                                    Большая благодарность за отлично проведённую работу! Замерщик по
+                                                    вызову
+                                                    пришёл быстро, всё хорошо объяснил , окна пришли в соответствии со
+                                                    согласованной датой, поднятие в квартиру прошла очень хорошо ,
+                                                    монтажники
+                                                    справились со своей работой на отлично! Все прошло в позитиве,
+                                                    соотношение
+                                                    цены и качества хорошее. Отличная команда! Спасибо!!!
+                                                </p>
+                                            </div>
+
+                                            <div class="tab-about-reviews__slide swiper-slide">
+                                                <div class="tab-about-reviews__body">
+                                                    <div class="tab-about-reviews__name">Анатолий Павлович</div>
+                                                    <div class="tab-about-reviews__info">
+                                                        <time datetime="2021-06-24"
+                                                            class="tab-about-reviews__time">15.09.2021</time>
+                                                        <div class="tab-about-reviews__agreement">Договор №214191</div>
+                                                    </div>
+                                                    <button class="tab-about-reviews__button _modal-open"
+                                                        data-modal-path="modal-reviews">
+                                                        Оставить отзыв
+                                                        <svg class="tab-about-reviews__icon-review">
+                                                            <use xlink:href="@img/icons/icons.svg#comment"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <p>
+                                                    Недавно воспользовался услугами вашей компании для
+                                                    установки окон в моей квартире. Хочу поделиться своим опытом.
+                                                </p>
+
+                                                <p>
+                                                    Хочу отметить качество работы, сроки а также обслуживание.
+                                                    Установленные окна выглядят
+                                                    отлично и работают без нареканий. Все швы аккуратные, а материалы
+                                                    качественные. Работы были выполнены точно в оговоренные сроки, что
+                                                    очень порадовало. Менеджеры компании были вежливы и всегда готовы
+                                                    ответить на все мои вопросы. Монтажники работали аккуратно и
+                                                    профессионально.
+                                                </p>
+                                            </div>
+
+                                            <div class="tab-about-reviews__slide swiper-slide">
+                                                <div class="tab-about-reviews__body">
+                                                    <div class="tab-about-reviews__name">Максим Сергеевич</div>
+                                                    <div class="tab-about-reviews__info">
+                                                        <time datetime="2021-06-24"
+                                                            class="tab-about-reviews__time">10.05.2021</time>
+                                                        <div class="tab-about-reviews__agreement">Договор №212951</div>
+                                                    </div>
+                                                    <button class="tab-about-reviews__button _modal-open"
+                                                        data-modal-path="modal-reviews">
+                                                        Оставить отзыв
+                                                        <svg class="tab-about-reviews__icon-review">
+                                                            <use xlink:href="@img/icons/icons.svg#comment"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <p>
+                                                    Решил обновить окна в своем доме и выбрал усгули вашей компании.
+                                                    Мой опыт сотрудничества с вами вышел весьма положительным.
+                                                </p>
+
+                                                <p>
+                                                    С самого начала менеджеры компании
+                                                    продемонстрировали высокий уровень профессионализма. Они подробно
+                                                    объяснили все этапы работы и помогли выбрать оптимальные материалы.
+                                                    Установленные окна превзошли мои ожидания. Они не только эстетично
+                                                    выглядят, но и обеспечивают отличную звукоизоляцию и теплоизоляцию.
+                                                </p>
+                                            </div>
+
+                                            <div class="tab-about-reviews__slide swiper-slide">
+                                                <div class="tab-about-reviews__body">
+                                                    <div class="tab-about-reviews__name">Артем Васильевич</div>
+                                                    <div class="tab-about-reviews__info">
+                                                        <time datetime="2021-06-24"
+                                                            class="tab-about-reviews__time">28.09.2021</time>
+                                                        <div class="tab-about-reviews__agreement">Договор №212390</div>
+                                                    </div>
+                                                    <button class="tab-about-reviews__button _modal-open"
+                                                        data-modal-path="modal-reviews">
+                                                        Оставить отзыв
+                                                        <svg class="tab-about-reviews__icon-review">
+                                                            <use xlink:href="@img/icons/icons.svg#comment"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <p>
+                                                    Обратился в данную компанию для остекления балкона в квартире.
+                                                </p>
+
+                                                <p>
+                                                    Работы были выполнены в оговоренные сроки, что для меня было очень
+                                                    важно. Монтажники работали быстро и аккуратно, не оставив после себя
+                                                    мусора. В целом, я остался очень доволен услугами компании
+                                                    и могу смело рекомендовать её всем, кто ищет
+                                                    надежного и профессионального подрядчика для остекления
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-about__content tab-about-certificates _tab-content" role="tabpanel"
+                                data-tab-target="certificates">
+                                <div class="tab-about-certificates__inner">
+                                    <div class="tab-about-certificates__slider swiper">
+                                        <div class="tab-about-certificates__swiper swiper-wrapper">
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-1">
+                                                    <img src="@img/about/tabs/certificates/01.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-2">
+                                                    <img src="@img/about/tabs/certificates/02.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-3">
+                                                    <img src="@img/about/tabs/certificates/03.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-4">
+                                                    <img src="@img/about/tabs/certificates/04.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-5" tabindex="-1">
+                                                    <img src="@img/about/tabs/certificates/05.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-6" tabindex="-1">
+                                                    <img src="@img/about/tabs/certificates/01.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+
+                                            <div class="tab-about-certificates__slide swiper-slide">
+                                                <button class="tab-about-certificates__media _modal-open"
+                                                    data-modal-path="modal-certificate-7" tabindex="-1">
+                                                    <img src="@img/about/tabs/certificates/02.jpg" alt="certificate">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-button-prev swiper-button-prev_between"></div>
+                                        <div class="swiper-button-next swiper-button-next_between"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="advantages">
+                <div class="advantages__container _container">
+                    <div class="advantages__body">
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <img src="@img/advantages/icons/01.svg" alt="icon">
+                            </div>
+                            <div class="advantages__inner">
+                                <div class="advantages__title">профессионализм</div>
+                                <p class="advantages__text">
+                                    Бригада профессиональных
+                                    мастеров по монтажу
+                                    и обслуживанию
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <img src="@img/advantages/icons/02.svg" alt="icon">
+                            </div>
+                            <div class="advantages__inner">
+                                <div class="advantages__title">Ценообразование</div>
+                                <p class="advantages__text">
+                                    Лучшие цены на рынке
+                                    пластиковых окон
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <img src="@img/advantages/icons/03.svg" alt="icon">
+                            </div>
+                            <div class="advantages__inner">
+                                <div class="advantages__title">Мобильность</div>
+                                <p class="advantages__text">
+                                    Заключение договора
+                                    на дому
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <img src="@img/advantages/icons/04.svg" alt="icon">
+                            </div>
+                            <div class="advantages__inner">
+                                <div class="advantages__title">Лояльность</div>
+                                <p class="advantages__text">
+                                    99% клиентов рекомендуют
+                                    нас своим друзьям
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <img src="@img/advantages/icons/05.svg" alt="icon">
+                            </div>
+                            <div class="advantages__inner">
+                                <div class="advantages__title">Скорость</div>
+                                <p class="advantages__text">
+                                    Короткие сроки
+                                    установки изделий
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__item">
+                            <div class="advantages__icon">
+                                <img src="@img/advantages/icons/06.svg" alt="icon">
+                            </div>
+                            <div class="advantages__inner">
+                                <div class="advantages__title">Служба качества</div>
+                                <p class="advantages__text">
+                                    Безупречное качество
+                                    и контроль изделий ПВХ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__button">
+                        <div class="sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="portfolio" id="portfolio">
+                <div class="portfolio__container _container">
+                    <div class="portfolio__body">
+                        <h2 class="portfolio__title title">Портфолио</h2>
+                        <div class="portfolio__slider swiper">
+                            <div class="portfolio__swiper swiper-wrapper">
+                                <div class="portfolio__slide swiper-slide">
+                                    <button class="portfolio__img _modal-open" data-modal-path="modal-portfolio-1">
+                                        <img src="@img/portfolio/slider-photo-1.jpg" alt="slider-photo">
+                                    </button>
+                                </div>
+                                <div class="portfolio__slide swiper-slide">
+                                    <button class="portfolio__img _modal-open" data-modal-path="modal-portfolio-2">
+                                        <img src="@img/portfolio/slider-photo-2.jpg" alt="slider-photo">
+                                    </button>
+                                </div>
+                                <div class="portfolio__slide swiper-slide">
+                                    <button class="portfolio__img _modal-open" data-modal-path="modal-portfolio-3">
+                                        <img src="@img/portfolio/slider-photo-3.jpg" alt="slider-photo">
+                                    </button>
+                                </div>
+                                <div class="portfolio__slide swiper-slide">
+                                    <button class="portfolio__img _modal-open" data-modal-path="modal-portfolio-4">
+                                        <img src="@img/portfolio/slider-photo-4.jpg" alt="slider-photo">
+                                    </button>
+                                </div>
+                                <div class="portfolio__slide swiper-slide">
+                                    <button class="portfolio__img _modal-open" tabindex="-1"
+                                        data-modal-path="modal-portfolio-5">
+                                        <img src="@img/portfolio/slider-photo-1.jpg" alt="slider-photo">
+                                    </button>
+                                </div>
+                                <div class="portfolio__slide swiper-slide">
+                                    <button class="portfolio__img _modal-open" tabindex="-1"
+                                        data-modal-path="modal-portfolio-6">
+                                        <img src="@img/portfolio/slider-photo-2.jpg" alt="slider-photo">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="questions" id="questions">
+                <div class="questions__container _container">
+                    <div class="questions__inner">
+                        <h2 class="questions__title title title_white">Вопрос-ответ</h2>
+                        <div class="questions__body">
+                            <div class="questions__spoller spoller-questions">
+                                <div class="spoller-questions__inner">
+                                    <button class="spoller-questions__button _spoller-button" data-spoller-button="1"
+                                        aria-expanded="false" aria-controls="spoller-window">Сколько по времени занимает
+                                        изготовление пластиковых окон?
+                                    </button>
+                                    <svg class="spoller-questions__icon _spoller-arrow" data-spoller-arrow="1">
+                                        <use xlink:href="@img/icons/icons.svg#spoller-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="spoller-questions__body _spoller-body" data-spoller-path="1"
+                                    id="spoller-window" aria-hidden="true">
+                                    Изготовление пластиковых окон занимает по времени около 1 часа
+                                </div>
+                            </div>
+
+                            <div class="questions__spoller spoller-questions">
+                                <div class="spoller-questions__inner">
+                                    <button class="spoller-questions__button _spoller-button" data-spoller-button="2"
+                                        aria-expanded="false" aria-controls="spoller-payment">Какие существуют способы
+                                        оплаты?
+                                    </button>
+                                    <svg class="spoller-questions__icon _spoller-arrow" data-spoller-arrow="2">
+                                        <use xlink:href="@img/icons/icons.svg#spoller-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="spoller-questions__body _spoller-body" data-spoller-path="2"
+                                    id="spoller-payment" aria-hidden="true">
+                                    Можете расчитаться наличными или по карте
+                                </div>
+                            </div>
+
+                            <div class="questions__spoller spoller-questions">
+                                <div class="spoller-questions__inner">
+                                    <button class="spoller-questions__button _spoller-button" data-spoller-button="3"
+                                        aria-expanded="false" aria-controls="spoller-sample">Где я могу посмотреть
+                                        образцы?
+                                    </button>
+                                    <svg class="spoller-questions__icon _spoller-arrow" data-spoller-arrow="3">
+                                        <use xlink:href="@img/icons/icons.svg#spoller-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="spoller-questions__body _spoller-body" data-spoller-path="3"
+                                    id="spoller-sample" aria-hidden="true">
+                                    На нашем сайте присутствует блок с нашими работами
+                                </div>
+                            </div>
+
+                            <div class="questions__spoller spoller-questions">
+                                <div class="spoller-questions__inner">
+                                    <button class="spoller-questions__button _spoller-button" data-spoller-button="4"
+                                        aria-expanded="false" aria-controls="spoller-measurer">Зачем вызывать замерщика?
+                                        Я могу дать размеры
+                                    </button>
+                                    <svg class="spoller-questions__icon _spoller-arrow" data-spoller-arrow="4">
+                                        <use xlink:href="@img/icons/icons.svg#spoller-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="spoller-questions__body _spoller-body" data-spoller-path="4"
+                                    id="spoller-measurer" aria-hidden="true">
+                                    Правильный замер снижет цену и сроки работы. Если вы сами сделаете замер, то он
+                                    может быть не верным или присутствуют некоторые детали которые заметит профессионал.
+                                </div>
+                            </div>
+
+                            <div class="questions__spoller spoller-questions">
+                                <div class="spoller-questions__inner">
+                                    <button class="spoller-questions__button _spoller-button" data-spoller-button="5"
+                                        aria-expanded="false" aria-controls="spoller-balcony">Хотелось бы отделать
+                                        балкон. Поможете?
+                                    </button>
+                                    <svg class="spoller-questions__icon _spoller-arrow" data-spoller-arrow="5">
+                                        <use xlink:href="@img/icons/icons.svg#spoller-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="spoller-questions__body _spoller-body" data-spoller-path="5"
+                                    id="spoller-balcony" aria-hidden="true">
+                                    Конечно. Для начала работы с нами обращайтесь по номеру телефона, почте или
+                                    приходите в наш офис
+                                </div>
+                            </div>
+
+                            <div class="questions__spoller spoller-questions">
+                                <div class="spoller-questions__inner">
+                                    <button class="spoller-questions__button _spoller-button" data-spoller-button="6"
+                                        aria-expanded="false" aria-controls="spoller-loaders">Мне надо нанимать
+                                        грузчиков для подъема?
+                                    </button>
+                                    <svg class="spoller-questions__icon _spoller-arrow" data-spoller-arrow="6">
+                                        <use xlink:href="@img/icons/icons.svg#spoller-arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="spoller-questions__body _spoller-body" data-spoller-path="6"
+                                    id="spoller-loaders" aria-hidden="true">
+                                    Нет, команда мастеров все сами окуратно доставят и внесут.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts__container _container">
+                    <h2 class="contacts__title title">Контакты</h2>
+                    <div class="contacts__body">
+                        <div class="contacts__info info-contacts">
+                            <img src="@img/contacts/workers.png" alt="workers" class="info-contacts__img">
+                            <div class="info-contacts__title">Бесплатная консультация:</div>
+                            <address class="info-contacts__address">
+                                <div class="info-contacts__phone">
+                                    <svg class="info-contacts__icon-phone">
+                                        <use xlink:href="@img/icons/icons.svg#phone"></use>
+                                    </svg>
+                                    <a href="tel:84932343140" class="info-contacts__link-phone">8 (4932) 34-31-40</a>
+                                    <a href="tel:89051093140" class="info-contacts__link-phone">8 (905) 109-31-40</a>
+                                </div>
+                                <div class="info-contacts__location">
+                                    <svg class="info-contacts__icon-location">
+                                        <use xlink:href="@img/icons/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="https://www.google.com.ua/maps" class="info-contacts__link">г. Иваново, ул.
+                                        Генерала Хлебникова, д.54,
+                                        оф.303</a>
+                                </div>
+                                <div class="info-contacts__email">
+                                    <svg class="info-contacts__icon-email">
+                                        <use xlink:href="@img/icons/icons.svg#email"></use>
+                                    </svg>
+                                    <a href="mailto:okna@haus.ru" class="info-contacts__link">okna@haus.ru</a>
+                                </div>
+                            </address>
+                            <p class="info-contacts__text">
+                                Установку должны выполнять только эксперты. Нам доверяют сотни семей.
+                                Узнайте поробнее, какие решения вам подходят.
+                                Вы можете приобрести недорогие товары
+                                при гарантированно
+                                высоком качестве.
+                            </p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon icon-social">
+                                            <use xlink:href="@img/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon icon-social">
+                                            <use xlink:href="@img/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon icon-social">
+                                            <use xlink:href="@img/icons/icons.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts__form form-contacts">
+                            <p class="form-contacts__title title">
+                                Остались вопросы?
+                            </p>
+                            <form action="#" method="post" class="main-form">
+                                <input type="text" name="name" required placeholder="Ваше имя"
+                                    class="main-form__input main-form__input_contacts">
+                                <input type="email" name="email" required placeholder="E-mail"
+                                    class="main-form__input main-form__input_contacts">
+
+                                <textarea class="main-form__textarea" name="textarea-review" id="textarea-contacts"
+                                    placeholder="Ваш отзыв"></textarea>
+
+                                <label for="checkbox-rules-contacts" class="main-form__label main-form__label_intro">
+                                    <input id="checkbox-rules-contacts" type="checkbox" required name="checkbox-rules"
+                                        class="main-form__checkbox">
+                                    <span class="main-form__checkbox-custom main-form__checkbox-custom_intro"></span>
+                                    <span class="main-form__rules main-form__rules_intro main-form__rules_contacts">
+                                        Я согласен(на) на обработку
+                                        <a href="#"><span>персональных данных</span></a>
+                                    </span>
+                                </label>
+
+                                <div class="main-form__width-button">
+                                    <button type="submit" class="main-form__button main-form__button_contacts">Отправить
+                                        сообщение</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+
+    <dialog class="modal" data-modal-target="1">
+        <div class="modal__content order-service">
+            <button class="order-service__close _modal-close" type="button">
+                <svg class="order-service__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="order-service__info">
+                <svg class="order-service__icon">
+                    <use xlink:href="@img/icons/icons.svg#sample"></use>
+                </svg>
+                <h4 class="order-service__title">Вызвать замерщика на дом</h4>
+            </div>
+            <form action="#" method="post" class="main-form">
+                <input type="text" name="name" required placeholder="Ваше имя" class="main-form__input">
+                <input type="tel" name="phone" required placeholder="Номер телефона" class="main-form__input">
+                <input type="email" name="email" required placeholder="E-mail" class="main-form__input">
+
+                <label for="checkbox-rules1" class="main-form__label">
+                    <input id="checkbox-rules1" type="checkbox" required name="checkbox-rules"
+                        class="main-form__checkbox">
+                    <span class="main-form__checkbox-custom"></span>
+                    <span class="main-form__rules">
+                        Я согласен(на) на обработку <span>персональных данных</span>
+                    </span>
+                </label>
+
+                <div class="main-form__width-button">
+                    <button type="submit" class="main-form__button">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="2">
+        <div class="modal__content order-service order-service_calculation">
+            <button class="order-service__close _modal-close" type="button">
+                <svg class="order-service__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="order-service__info">
+                <svg class="order-service__icon">
+                    <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                </svg>
+                <h4 class="order-service__title">Заказать расчет</h4>
+            </div>
+            <form action="#" method="post" class="main-form">
+                <input type="text" name="name" required placeholder="Ваше имя" class="main-form__input">
+                <input type="tel" name="phone" required placeholder="Номер телефона" class="main-form__input">
+                <input type="email" name="email" required placeholder="E-mail" class="main-form__input">
+
+                <label for="checkbox-rules2" class="main-form__label">
+                    <input id="checkbox-rules2" type="checkbox" required name="checkbox-rules"
+                        class="main-form__checkbox main-form__checkbox_calculation">
+                    <span class="main-form__checkbox-custom"></span>
+                    <span class="main-form__rules main-form__rules_calculation">
+                        Я согласен(на) на обработку <span>персональных данных</span>
+                    </span>
+                </label>
+
+                <div class="main-form__width-button">
+                    <button type="submit" class="main-form__button main-form__button_calculation">Заказать
+                        расчет</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="3">
+        <div class="modal__content modal-services modal-services_windows">
+            <button class="modal-services__close _modal-close" type="button">
+                <svg class="modal-services__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-services__inner">
+                <div class="modal-services__slider swiper">
+                    <div class="modal-services__swiper swiper-wrapper">
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/windows/01.jpg" alt="Пластиковое окно">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/windows/02.jpg" alt="Пластиковое окно">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/windows/03.jpg" alt="Пластиковое окно">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/windows/04.jpg" alt="Пластиковое окно">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/windows/05.jpg" alt="Пластиковое окно">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="modal-services__info">
+                    <h4 class="modal-services__title title">Установка пластиковых окон</h4>
+                    <p class="modal-services__text">
+                        Пластиковые окна Rehau
+                        от проверенного производителя с
+                        гарантией качества
+                    </p>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-services__body">
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/01.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Пластиковые окна</div>
+                        <p class="item-modalservices__text">
+                            Пластиковые окна могут быть любого нужного вам цвета. Внутри и снаружи.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-two">
+                    <img class="item-modalservices__icon" src="@img/services/modals/02.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Подоконники</div>
+                        <p class="item-modalservices__text">
+                            Качественный подоконник не царапается, выдерживает большие нагрузки и будет служить вам
+                            долгие годы.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-three">
+                    <img class="item-modalservices__icon" src="@img/services/modals/03.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Проветриватели</div>
+                        <p class="item-modalservices__text">
+                            Постоянное обновление воздуха
+                            в комнате снижает риск аллергии, улучшает сон и благоприятно влияет
+                            на самочувствие.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/04.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Ламинация</div>
+                        <p class="item-modalservices__text">
+                            Использование ламинационных окон, ламинации в массе, 3д-ламинации, а также покраска окон.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/05.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Цветные ручки</div>
+                        <p class="item-modalservices__text">
+                            Оригинальные оконные ручки подчеркнут дизайн окна. Подберем оптимальный цвет ручек в
+                            зависимости от цвета всей конструкции.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/06.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Москитные сетки</div>
+                        <p class="item-modalservices__text">
+                            Нежеланные насекомые останутся на улице, а ваша кошка - в квартире. Устанавливаем сетки для
+                            пластиковых окон любых форм и размеров.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="4">
+        <div class="modal__content modal-services modal-services_balconies">
+            <button class="modal-services__close _modal-close" type="button">
+                <svg class="modal-services__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-services__inner">
+                <div class="modal-services__slider swiper">
+                    <div class="modal-services__swiper swiper-wrapper">
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/balconies/01.jpg" alt="Балкон">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/balconies/02.jpg" alt="Балкон">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/balconies/03.jpg" alt="Балкон">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/balconies/04.jpg" alt="Балкон">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/balconies/05.jpg" alt="Балкон">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="modal-services__info">
+                    <h4 class="modal-services__title title">Остекление балконов и лоджий</h4>
+                    <p class="modal-services__text">
+                        Занимаемся остеклением и отделкой
+                        балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за
+                        сложные объекты
+                    </p>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-services__body">
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/01.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Тёплое остекление</div>
+                        <p class="item-modalservices__text">
+                            Теплое остекление — возможность сделать из балкона или лоджии полноценное жилое помещение.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-two">
+                    <img class="item-modalservices__icon" src="@img/services/modals/02.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Панорамное остекление</div>
+                        <p class="item-modalservices__text">
+                            Остекление от пола до потолка, дающее максимальное естественное освещение
+                            и прекрасный обзор окрестностей.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-three">
+                    <img class="item-modalservices__icon" src="@img/services/modals/03.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Остекление с крышей</div>
+                        <p class="item-modalservices__text">
+                            Строительство крыши для домов
+                            с высоким потолком и квартир, расположенных на последних этажах.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/04.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Холодное остекление</div>
+                        <p class="item-modalservices__text">
+                            Холодное остекление рекомендовано в случаях, когда балкон или лоджия используются для
+                            хранения вещей.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/05.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Остекление с выносом</div>
+                        <p class="item-modalservices__text">
+                            Способ увеличения площади и объема балкона или лоджии.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/06.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Объединение с комнатой</div>
+                        <p class="item-modalservices__text">
+                            Перепланировка квартиры, дающая дополнительные метры полезной площади и улучшающая жилищные
+                            условия.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="5">
+        <div class="modal__content modal-services modal-services_cottages">
+            <button class="modal-services__close _modal-close" type="button">
+                <svg class="modal-services__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-services__inner">
+                <div class="modal-services__slider swiper">
+                    <div class="modal-services__swiper swiper-wrapper">
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/cottages/01.jpg" alt="Коттедж">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/cottages/02.jpg" alt="Коттедж">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/cottages/03.jpg" alt="Коттедж">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/cottages/04.jpg" alt="Коттедж">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/cottages/05.jpg" alt="Коттедж">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="modal-services__info">
+                    <h4 class="modal-services__title title">Остекление коттеджей и дач</h4>
+                    <p class="modal-services__text">
+                        Остекление и отделка под ключ:
+                        от коттеджей
+                        и дач до террас
+                        и беседок. Выделяем личного
+                        технолога под каждый объект.
+                    </p>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-services__body">
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/01.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Цветные окна</div>
+                        <p class="item-modalservices__text">
+                            Использование ламинационных окон, ламинации в массе, 3д-ламинации,
+                            а также покраска окон.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-two">
+                    <img class="item-modalservices__icon" src="@img/services/modals/02.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Алюминиевые конструкции</div>
+                        <p class="item-modalservices__text">
+                            Идеальный вариант для
+                            большой площади остекления:
+                            зимние сады, террасы и т.п..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-three">
+                    <img class="item-modalservices__icon" src="@img/services/modals/03.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Портальные решения</div>
+                        <p class="item-modalservices__text">
+                            Эксклюзивные дверные и балконные раздвижные
+                            конструкции для элитных квартир и респектабельных
+                            домов, обеспечивающие панорамный вид
+                            и экономящие пространство.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/04.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Фигурные окна</div>
+                        <p class="item-modalservices__text">
+                            Арочные окна, окна трапеции, треугольные окна, круглые и многоугольные окна
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/05.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Деревянные окна</div>
+                        <p class="item-modalservices__text">
+                            Экологичное и натуральное
+                            решение для остекления
+                            любого объекта.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/06.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Рольставни и ворота</div>
+                        <p class="item-modalservices__text">
+                            Защитные рольставни
+                            для частных домов,
+                            роллетные ворота
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="6">
+        <div class="modal__content modal-services modal-services_objects">
+            <button class="modal-services__close _modal-close" type="button">
+                <svg class="modal-services__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-services__inner">
+                <div class="modal-services__slider swiper">
+                    <div class="modal-services__swiper swiper-wrapper">
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/objects/01.jpg" alt="Объект">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/objects/02.jpg" alt="Объект">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/objects/03.jpg" alt="Объект">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/objects/04.jpg" alt="Объект">
+                            </div>
+                        </div>
+
+                        <div class="modal-services__slide swiper-slide">
+                            <div class="modal-services__media">
+                                <img src="@img/services/modals/objects/05.jpg" alt="Объект">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="modal-services__info">
+                    <h4 class="modal-services__title title">Остекление корпоративных объектов</h4>
+                    <p class="modal-services__text">
+                        Реализуем сложные проекты
+                        по остеклению торговых центров,
+                        ресторанов, производственных помещений и офисов
+                    </p>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-services__body">
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/01.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Многоквартирные дома</div>
+                        <p class="item-modalservices__text">
+                            Изготовление и монтаж окон ПВХ
+                            под ключ. Приглашаем к партнерству
+                            застройщиков
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-two">
+                    <img class="item-modalservices__icon" src="@img/services/modals/02.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Социальные объекты</div>
+                        <p class="item-modalservices__text">
+                            Остекляем детские сады,
+                            школы, медицинские учреждения
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices item-modalservices_place-three">
+                    <img class="item-modalservices__icon" src="@img/services/modals/03.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Спортивные объекты</div>
+                        <p class="item-modalservices__text">
+                            Остекляем спортивные залы,
+                            бассейны, крытые спорткомплексы
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/04.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Офисные помещения</div>
+                        <p class="item-modalservices__text">
+                            Установка пластиковых окон,
+                            офисных перегородок и
+                            дверей и входных групп.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/05.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Объекты торговли</div>
+                        <p class="item-modalservices__text">
+                            Способ увеличения площади и объема балкона или лоджии.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-services__item item-modalservices">
+                    <img class="item-modalservices__icon" src="@img/services/modals/06.svg" alt="icon">
+                    <div class="item-modalservices__inner">
+                        <div class="item-modalservices__title">Производственные помещения</div>
+                        <p class="item-modalservices__text">
+                            Устанавливаем окна для складских
+                            и промышленных зданий в соответствии
+                            с требованиями бизнеса
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-portfolio-1">
+        <div class="modal__content modal-portfolio">
+            <button class="modal-portfolio__close _modal-close" type="button">
+                <svg class="modal-portfolio__close-icon _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-portfolio__body">
+                <div class="modal-portfolio__slider swiper">
+                    <div class="modal-portfolio__swiper swiper-wrapper">
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/portfolio/modal-portfolio/slider-modal-portfolio.jpg"
+                                    alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/balconies/01.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/balconies/04.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/balconies/05.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/portfolio/modal-portfolio/slider-modal-portfolio.jpg"
+                                    alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="modal-portfolio__info info-modal">
+                    <div class="info-modal__inner">
+                        <time class="info-modal__time" datetime="2021-10-08">08.10.2021</time>
+                        <div class="info-modal__location">
+                            <svg class="info-modal__icon-location">
+                                <use xlink:href="@img/icons/icons.svg#info-modal"></use>
+                            </svg>
+                            <address class="info-modal__address">
+                                г Иваново, ул Ташкентская, д 4 к 1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-modal__title title">
+                        Монтаж окна и балконного блока
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Что делали:</span>
+                        <p>Профильная система Rehau Blitz Фурнитура Roto NT</p>
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Категории объекта:</span>
+                        <p>Окна Балконный блок</p>
+                    </div>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-portfolio__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-portfolio-2">
+        <div class="modal__content modal-portfolio">
+            <button class="modal-portfolio__close _modal-close" type="button">
+                <svg class="modal-portfolio__close-icon _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-portfolio__body">
+                <div class="modal-portfolio__slider swiper">
+                    <div class="modal-portfolio__swiper swiper-wrapper">
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/portfolio/modal-portfolio/slider-modal-portfolio.jpg"
+                                    alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/01.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/03.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/04.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/05.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="modal-portfolio__info info-modal">
+                    <div class="info-modal__inner">
+                        <time class="info-modal__time" datetime="2021-10-09">20.11.2021</time>
+                        <div class="info-modal__location">
+                            <svg class="info-modal__icon-location">
+                                <use xlink:href="@img/icons/icons.svg#info-modal"></use>
+                            </svg>
+                            <address class="info-modal__address">
+                                г Иваново, ул Ташкентская, д 4 к 1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-modal__title title">
+                        Остекление коттеджа
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Что делали:</span>
+                        <p>Профильная система VEKA Euroline Фурнитура Buto TT</p>
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Категории объекта:</span>
+                        <p>Остекление коттеджа</p>
+                    </div>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-portfolio__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-portfolio-3">
+        <div class="modal__content modal-portfolio">
+            <button class="modal-portfolio__close _modal-close" type="button">
+                <svg class="modal-portfolio__close-icon _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-portfolio__body">
+                <div class="modal-portfolio__slider swiper">
+                    <div class="modal-portfolio__swiper swiper-wrapper">
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/objects/01.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/objects/02.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/objects/03.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/objects/04.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/portfolio/modal-portfolio/slider-modal-portfolio.jpg"
+                                    alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="modal-portfolio__info info-modal">
+                    <div class="info-modal__inner">
+                        <time class="info-modal__time" datetime="2021-10-10">15.09.2021</time>
+                        <div class="info-modal__location">
+                            <svg class="info-modal__icon-location">
+                                <use xlink:href="@img/icons/icons.svg#info-modal"></use>
+                            </svg>
+                            <address class="info-modal__address">
+                                г Иваново, ул Ташкентская, д 4 к 1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-modal__title title">
+                        Остекление корпоративного объекта
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Что делали:</span>
+                        <p>Профильная система KBE 58</p>
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Категории объекта:</span>
+                        <p>Остекление корпоративного объекта</p>
+                    </div>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-portfolio__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-portfolio-4">
+        <div class="modal__content modal-portfolio">
+            <button class="modal-portfolio__close _modal-close" type="button">
+                <svg class="modal-portfolio__close-icon _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-portfolio__body">
+                <div class="modal-portfolio__slider swiper">
+                    <div class="modal-portfolio__swiper swiper-wrapper">
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/02.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/03.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/01.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/04.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/05.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="modal-portfolio__info info-modal">
+                    <div class="info-modal__inner">
+                        <time class="info-modal__time" datetime="2021-10-08">21.09.2021</time>
+                        <div class="info-modal__location">
+                            <svg class="info-modal__icon-location">
+                                <use xlink:href="@img/icons/icons.svg#info-modal"></use>
+                            </svg>
+                            <address class="info-modal__address">
+                                г Иваново, ул Ташкентская, д 4 к 1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-modal__title title">
+                        Остекление дачи
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Что делали:</span>
+                        <p>Профильная система Salamander Streamline</p>
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Категории объекта:</span>
+                        <p>Остекление дач</p>
+                    </div>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-portfolio__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-portfolio-5">
+        <div class="modal__content modal-portfolio">
+            <button class="modal-portfolio__close _modal-close" type="button">
+                <svg class="modal-portfolio__close-icon _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-portfolio__body">
+                <div class="modal-portfolio__slider swiper">
+                    <div class="modal-portfolio__swiper swiper-wrapper">
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/windows/01.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/windows/02.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/windows/03.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/windows/04.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/windows/05.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="modal-portfolio__info info-modal">
+                    <div class="info-modal__inner">
+                        <time class="info-modal__time" datetime="2021-10-08">25.10.2021</time>
+                        <div class="info-modal__location">
+                            <svg class="info-modal__icon-location">
+                                <use xlink:href="@img/icons/icons.svg#info-modal"></use>
+                            </svg>
+                            <address class="info-modal__address">
+                                г Иваново, ул Ташкентская, д 4 к 1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-modal__title title">
+                        Остекление балкона на дачи
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Что делали:</span>
+                        <p>Профильная система KBE 58 Фурнитура Net ON</p>
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Категории объекта:</span>
+                        <p>Окна Балконный блок</p>
+                    </div>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-portfolio__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-portfolio-6">
+        <div class="modal__content modal-portfolio">
+            <button class="modal-portfolio__close _modal-close" type="button">
+                <svg class="modal-portfolio__close-icon _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-portfolio__body">
+                <div class="modal-portfolio__slider swiper">
+                    <div class="modal-portfolio__swiper swiper-wrapper">
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/05.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/03.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/01.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/services/modals/cottages/02.jpg" alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+
+                        <div class="modal-portfolio__slide swiper-slide">
+                            <div class="modal-portfolio__media">
+                                <img src="@img/portfolio/modal-portfolio/slider-modal-portfolio.jpg"
+                                    alt="slider-modal-portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="modal-portfolio__info info-modal">
+                    <div class="info-modal__inner">
+                        <time class="info-modal__time" datetime="2021-10-08">10.08.2021</time>
+                        <div class="info-modal__location">
+                            <svg class="info-modal__icon-location">
+                                <use xlink:href="@img/icons/icons.svg#info-modal"></use>
+                            </svg>
+                            <address class="info-modal__address">
+                                г Иваново, ул Ташкентская, д 4 к 1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-modal__title title">
+                        Остекление коттеджа
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Что делали:</span>
+                        <p>Профильная система VEKA Euroline Фурнитура Buto TT</p>
+                    </div>
+                    <div class="info-modal__info">
+                        <span>Категории объекта:</span>
+                        <p>Остекление коттеджа</p>
+                    </div>
+                    <div class="order">
+                        <div class="order__sample sample-order">
+                            <svg class="sample-order__icon _modal-open" data-modal-path="1">
+                                <use xlink:href="@img/icons/icons.svg#sample"></use>
+                            </svg>
+                            <button type="button" class="sample-order__button _modal-open" data-modal-path="1">Заявка на
+                                замер</button>
+                        </div>
+                        <div class="order__calculation calculation-order">
+                            <svg class="calculation-order__icon _modal-open" data-modal-path="2">
+                                <use xlink:href="@img/icons/icons.svg#calculation"></use>
+                            </svg>
+                            <button type="button" class="calculation-order__button _modal-open"
+                                data-modal-path="2">Заказать
+                                расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-portfolio__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17380.85004453094!2d40.976455298707634!3d57.00692671248071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4sINCY0LLQsNC90L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1726209631520!5m2!1sru!2sua"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-about">
+        <div class="modal__content modal-video">
+            <button class="modal-video__close _modal-close" type="button">
+                <svg class="modal-video__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-video__title title">Видео</div>
+            <div class="modal-video__video">
+                <iframe src="https://www.youtube.com/embed/aw6NvqtVlu4?si=wEo-uDs4-Veeo3JR" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-reviews">
+        <div class="modal__content modal-reviews">
+            <button class="modal-reviews__close _modal-close" type="button">
+                <svg class="modal-reviews__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-reviews__inner">
+                <svg class="modal-reviews__icon-comment">
+                    <use xlink:href="@img/icons/icons.svg#comment"></use>
+                </svg>
+                <div class="modal-reviews__title title">Добавьте Ваш отзыв</div>
+            </div>
+            <form action="#" method="post" class="main-form">
+                <input type="text" name="name" required placeholder="Ваше имя"
+                    class="main-form__input main-form__input_contacts">
+                <input type="email" name="email" required placeholder="E-mail"
+                    class="main-form__input main-form__input_contacts">
+
+                <textarea class="main-form__textarea main-form__textarea_rivews" name="textarea-review"
+                    id="textarea-review" placeholder="Ваш отзыв"></textarea>
+
+                <label for="checkbox-rules-comment" class="main-form__label main-form__label_intro">
+                    <input id="checkbox-rules-comment" type="checkbox" required name="checkbox-rules"
+                        class="main-form__checkbox">
+                    <span class="main-form__checkbox-custom main-form__checkbox-custom_intro"></span>
+                    <span class="main-form__rules main-form__rules_intro main-form__rules_contacts">
+                        Я согласен(на) на обработку
+                        <a href="#"><span>персональных данных</span></a>
+                    </span>
+                </label>
+
+                <div class="main-form__width-button">
+                    <button type="submit" class="main-form__button main-form__button_contacts">Отправить
+                        сообщение</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-1">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-2">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-3">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-4">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-5">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-6">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal" data-modal-target="modal-certificate-7">
+        <div class="modal__content modal-certificate">
+            <button class="modal-certificate__close _modal-close" type="button">
+                <svg class="modal-certificate__icon-close _modal-close">
+                    <use xlink:href="@img/icons/icons.svg#form-close" class="_modal-close"></use>
+                </svg>
+            </button>
+            <div class="modal-certificate__inner">
+                <img src="@img/about/tabs/certificates/modal/01.jpg" alt="certificate">
+            </div>
+        </div>
+    </dialog>
+
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+.footer {
+    padding: rem(53) rem(0);
+    background-color: #2F2F51;
+
+    @media (max-width: $mobile) {
+        padding: rem(30) rem(0);
+    }
+
+    &__container {}
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(15);
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            gap: rem(30);
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(22);
+    }
+
+    &__text {
+        line-height: prc(20, 16);
+        color: #fff;
+    }
+
+    &__info {
+        display: flex;
+        gap: rem(25);
+
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+            gap: rem(10);
+        }
+    }
+
+    &__confidentiality {
+        display: inline-block;
+        color: #fff;
+        font-size: rem(14);
+        line-height: prc(20, 14);
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1.5px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 0.5s ease 0s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__agreement {
+        display: inline-block;
+        color: #fff;
+        font-size: rem(14);
+        line-height: prc(20, 14);
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1.5px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 0.5s ease 0s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

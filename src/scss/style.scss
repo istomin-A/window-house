@@ -1,0 +1,128 @@
+@use 'sass:math';
+// =======================================================================================================
+// reset styles
+@import "reset.scss";
+
+// =======================================================================================================
+// Функции для перевода из px в rem, em, %
+
+// rem
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+
+// em
+@function em($px, $value) {
+    $result: math.div($px, $value) + em;
+    @return $result;
+}
+
+// %
+@function prc($pxOne, $pxTwo) {
+    $result: math.div($pxOne, $pxTwo) * 100%;
+    @return $result;
+}
+
+// =======================================================================================================
+// import fonts
+// &display=swap - что бы шрифты грузились коректно
+// &subset=cyrillic-ext - для кирилических сайтов
+// example - @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap&subset=cyrillic-ext");
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap&subset=cyrillic-ext);
+
+// =======================================================================================================
+// main colors
+
+
+// =======================================================================================================
+body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: rem(16);
+    color: #2F2F51;
+    background-color: #F2F2F2;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+// =======================================================================================================
+// container
+._container {
+    max-width: rem(1230);
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+// *grid
+$pc: em(1230, 16);
+$tablet: 61.99875em; // 991.98px
+$mobile: 47.99875em; // 767.98px
+$mobileSmall: 29.99875em; // 479.98px
+// /* PC */
+/*@media (max-width: $pc) {
+    ._container {
+        max-width: 60.625rem;
+    }
+}*/
+
+// /* Tablet */
+/*@media (max-width: $tablet) {
+    ._container {
+        max-width: 46.875rem;
+    }
+}*/
+
+// /* Mobile */
+/*@media (max-width: $mobile) {
+    ._container {
+        max-width: none;
+    }
+}*/
+
+// =======================================================================================================
+/* wrapper */
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    // press footer
+    .main {
+        flex: 1 1 auto;
+        // fix slider
+        min-width: 0;
+    }
+}
+
+// =======================================================================================================
+// Подключение Swiper`a стили
+@import "../../node_modules/swiper/swiper-bundle";
+
+// =======================================================================================================
+// *_ibg
+// ._ibg {
+//     position: relative;
+
+//     img {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         object-fit: cover;
+//     }
+// }
+
+// =======================================================================================================
+@import "base.scss";
+@import "common.scss";
+@import "header.scss";
+@import "home.scss";
+@import "footer.scss";
+
+// =======================================================================================================
+// pages
