@@ -17,6 +17,7 @@
         align-items: center;
         justify-content: space-between;
         gap: rem(10);
+        padding: rem(5) rem(0);
         min-height: rem(97);
         transition: min-height 0.3s ease 0s;
 
@@ -45,17 +46,6 @@
             &._active {
                 left: 0;
             }
-
-            &::before {
-                content: "";
-                position: fixed;
-                width: 100%;
-                top: 0;
-                left: 0;
-                height: rem(97);
-                background-color: #fff;
-                z-index: 20;
-            }
         }
     }
 
@@ -70,7 +60,7 @@
 
         @media (max-width: $mobile) {
             flex-direction: column;
-            padding: rem(120) rem(0) rem(0) rem(70);
+            padding: rem(120) rem(0) rem(0) rem(30);
         }
     }
 
