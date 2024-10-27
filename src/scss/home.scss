@@ -1153,19 +1153,23 @@
 }
 
 .modal-reviews {
-    padding: rem(60) rem(100);
+    display: grid;
+    grid-template-columns: rem(395);
+    padding: rem(62) rem(100);
     position: relative;
 
     @media (max-width: $tablet) {
-        padding: rem(60) rem(70);
+        padding: rem(62) rem(75);
     }
 
     @media (max-width: $mobile) {
-        padding: rem(40);
+        padding: rem(50) rem(35);
+        grid-template-columns: rem(300);
     }
 
     @media (max-width: $mobileSmall) {
-        padding: rem(40) rem(20) rem(20) rem(20);
+        padding: rem(50) rem(25);
+        grid-template-columns: rem(220);
     }
 
     &__close {
@@ -1187,7 +1191,7 @@
     &__inner {
         display: flex;
         align-items: center;
-        gap: rem(50);
+        gap: rem(20);
 
         &:not(:last-child) {
             margin: rem(0) rem(0) rem(30) rem(0);
